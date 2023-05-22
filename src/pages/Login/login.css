@@ -1,0 +1,124 @@
+.login {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/51e53f54-0d9f-40ec-9e05-c030def06ac9/9785b337-3275-4f53-ae5f-81449cf5e4bd/NG-en-20230515-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  padding: 20px;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100vh;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #141414 100%, transparent 100%);
+  opacity: 0.6;
+}
+
+.login__contents {
+  z-index: 99;
+}
+
+.login__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2rem;
+}
+
+.login__header > img {
+  height: 50px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.login__body {
+  background-color: #000;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+input[type="email"],
+input[type="password"] {
+  height: 40px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e50914;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  font: inherit;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.login__footer {
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer__text {
+  margin-bottom: 10px;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.form-error {
+  color: orange;
+  padding: 2px 0 15px 0;
+  align-self: flex-start;
+}
